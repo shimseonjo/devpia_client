@@ -23,7 +23,7 @@ function App() {
     const text = e.target.text.value;
     const done = e.target.done.checked;
     await axios.post(server_url,{text,done});
-    fetchData();
+    await fetchData();
 
     // fetch(server_url,{
     //   method:'POST',
